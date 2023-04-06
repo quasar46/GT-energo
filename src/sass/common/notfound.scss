@@ -1,0 +1,44 @@
+.notfound__wrapper {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  .button-default {
+    align-self: center;
+    @media (max-width: 767px) {
+        align-self: stretch;
+    }
+  }
+  img {
+    width: 950px;
+    @media (max-width: 1919px) {
+      width: 677px;
+    }
+    @media (max-width: 1279px) {
+      width: 100%;
+    }
+  }
+  @media (max-width: 1919px) {
+    padding-top: 50px;
+  }
+  @media (max-width: 1279px) {
+    padding-top: 100px;
+  }
+  @media (max-width: 767px) {
+    padding-top: 50px;
+    gap: 20px;
+  }
+}
+
+.notfound__title {
+    font-size: 43px;
+    font-weight: 800;
+    color: #fff;
+    text-align: center;
+    @media (max-width: 767px) {
+        font-size: 24px;
+    }
+}

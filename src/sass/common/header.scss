@@ -1,0 +1,122 @@
+.header {
+  position: relative;
+  z-index: 10;
+  color: var(--blue);
+  &--index {
+    background-color: var(--blue30);
+    color: #fff;
+  }
+}
+
+.header__top {
+  background-color: var(--blue);
+  color: #fff;
+  ._container {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  @media (max-width: 1279px) {
+    display: none;
+  }
+  &--index {
+    background-color: var(--blue90);
+  }
+  &--404 {
+    background-color: var(--blue90);
+  }
+}
+
+.header__bottom {
+  border-bottom: 1px solid #f5f2ef;
+  background-color: #fff;
+  ._container {
+    height: 100px;
+    display: flex;
+    align-items: center;
+  }
+  @media (max-width: 1279px) {
+    border-bottom: none;
+  }
+  &--index {
+    background-color: var(--blue30);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    &.active {
+      background-color: #fff;
+    }
+  }
+  &--404 {
+    background-color: var(--blue);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    &.active {
+      background-color: #fff;
+    }
+  }
+}
+
+.header__link {
+  padding-left: 35px;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: contain;
+  font-size: 17px;
+  font-weight: 600;
+  &--location {
+    background-image: url("../images/vector/light-vuesax-linear-location.svg");
+  }
+  &--phone {
+    background-image: url("../images/vector/vuesax-linear-call-calling.svg");
+  }
+}
+
+.header__logo {
+  //   margin-right: auto;
+  width: 234px;
+  @media (max-width: 767px) {
+    width: 156px;
+  }
+}
+
+.header__lk {
+  padding: 4px 0;
+  padding-left: 43px;
+  background-image: url("../images/vector/account-circle.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  @media (max-width: 1279px) {
+    display: none;
+  }
+  &--index {
+    background-image: url("../images/vector/account-circle-white.svg");
+  }
+  &--404 {
+    background-image: url("../images/vector/account-circle-white.svg");
+    color: #fff;
+  }
+}
+
+.header__burger {
+  display: none;
+  position: relative;
+  flex-direction: column;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  background-image: url("../images/vector/burger.svg");
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &--white {
+    background-image: url("../images/vector/burger-white.svg");
+  }
+  @media (max-width: 1279px) {
+    display: flex;
+  }
+  &.active {
+    background-image: url("../images/vector/burger-active.svg");
+  }
+}

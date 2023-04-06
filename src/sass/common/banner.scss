@@ -1,0 +1,99 @@
+.banner {
+  margin-top: 40px;
+  @media (max-width: 1279px) {
+    margin-bottom: 90px;
+  }
+}
+
+.banner__back {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.banner__wrapper {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  height: 460px;
+  background-color: var(--blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 68px;
+  background-size: cover;
+  @media (max-width: 767px) {
+    background-position: right -230px center;
+  }
+  @media (max-width: 1919px) {
+    padding: 60px 46px;
+  }
+  @media (max-width: 1279px) {
+    height: 290px;
+    padding: 30px 40px;
+  }
+  @media (max-width: 767px) {
+    padding: 20px;
+  }
+  &--o-kompanii {
+    background-image: url("../images/banner1.jpg");
+  }
+  &--documenti {
+    background-image: url("../images/banner2.jpg");
+  }
+  &--ohrana {
+    background-image: url("../images/banner3.jpg");
+  }
+  &--projects {
+    background-image: url("../images/banner4.jpg");
+  }
+  &--tehno {
+    background-image: url("../images/banner5.jpg");
+  }
+  &--job {
+    background-image: url("../images/banner6.jpg");
+  }
+  &--contacts {
+    background-image: url("../images/banner7.jpg");
+  }
+  &--news {
+    background-image: url("../images/banner8.jpg");
+  }
+  &--rates {
+    background-image: url("../images/banner9.jpg");
+  }
+  &--new {
+    background-image: url("../images/banner10.jpg");
+  }
+}
+
+.banner__title {
+  font-size: 100px;
+  font-weight: 800;
+  color: #fff;
+  @media (max-width: 1919px) {
+    font-size: 80px;
+  }
+  @media (max-width: 1279px) {
+    font-size: 65px;
+    font-weight: 700;
+  }
+  @media (max-width: 767px) {
+    font-size: 36px;
+  }
+  &--new {
+    font-size: 55px;
+    line-height: 1.45;
+    @media (max-width: 1279px) {
+      font-size: 43px;
+      line-height: 1.17;
+      br {
+        display: none;
+      }
+    }
+    @media (max-width: 767px) {
+      font-size: 24px;
+      line-height: 1.23;
+    }
+  }
+}

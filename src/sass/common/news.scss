@@ -1,0 +1,32 @@
+.news__wrapper {
+  display: flex;
+  flex-direction: column;
+  .button-default {
+    align-self: center;
+    @media (max-width: 767px) {
+      align-self: stretch;
+    }
+  }
+}
+
+.news__carts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 80px 40px;
+  margin-bottom: 80px;
+  @media (max-width: 1919px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 1279px) {
+    margin-bottom: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+  }
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.news__grid {
+  display: grid;
+}

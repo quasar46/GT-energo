@@ -1,0 +1,33 @@
+.swiper-button-prev {
+  &::after {
+    content: "";
+    background-image: url("../images/vector/arrow-prev.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 38px;
+    height: 25px;
+    position: absolute;
+    left: 0;
+    @media (max-width: 767px) {
+      width: 28px;
+      height: 18px;
+    }
+  }
+}
+
+.swiper-button-next {
+  &::after {
+    content: "";
+    background-image: url("../images/vector/arrow-next.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 38px;
+    height: 25px;
+    position: absolute;
+    right: 0;
+    @media (max-width: 767px) {
+      width: 28px;
+      height: 18px;
+    }
+  }
+}

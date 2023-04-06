@@ -1,0 +1,31 @@
+.join {
+  ._container {
+    @media (max-width: 767px) {
+      max-width: 100%;
+      padding: 0;
+    }
+  }
+}
+
+.join__wrapper {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--blue);
+  border-radius: 8px;
+  padding: 50px 70px;
+  background-image: url("../images/banner11.jpg");
+  background-size: 100%;
+  .title-inner {
+    margin-bottom: 20px;
+  }
+  @media (max-width: 1919px) {
+    padding: 50px 45px;
+  }
+  @media (max-width: 1279px) {
+    padding: 55px 40px;
+  }
+  @media (max-width: 767px) {
+    padding: 30px 20px;
+    border-radius: 0;
+  }
+}

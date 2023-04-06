@@ -1,0 +1,84 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible" content="IE=edge")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet" href="css/main.css")
+    body
+        .wrapper.wrapper--404
+            header.header.header--404
+                .header__top.header__top--404
+                    ._container
+                        a.header__link.header__link--location г. Тамбов, ул. Московское шоссе, 182
+                        a.header__link.header__link--phone(href="+74752555568") +7 4752 55-55-68
+                .header__bottom.header__bottom--404
+                    ._container
+                        a(href="index.html")
+                            img.header__logo(src="images/vector/header-logo-index.svg" alt="")
+                        .top_menu
+                            ul.main-nav.main-nav--index
+                                li.item
+                                    a
+                                        span О компании
+                                        img(src="images/vector/drop-white.svg" alt="")
+                                    .main-nav__submenu-wrapper
+                                        .main-nav__submenu
+                                            a(href="") Подменю 1
+                                            a(href="") Подменю 2
+                                            a(href="") Подменю 3
+                                li.item
+                                    a
+                                        span Потребителям
+                                        img(src="images/vector/drop-white.svg" alt="")
+                                    .main-nav__submenu-wrapper
+                                        .main-nav__submenu
+                                            a(href="") Подменю 1
+                                            a(href="") Подменю 2
+                                            a(href="") Подменю 3
+                                li.item
+                                    a(href='')
+                                        span Раскрытие информации
+                                li.item
+                                    a(href='')
+                                        span Новости
+                                li.item
+                                    a(href='')
+                                        span Объявления
+                                li.item
+                                    a(href='')
+                                        span Контакты
+                                li.dd_menu
+                                    button.dropdown-toggle(type='button') Ещё
+                                        img(src="images/vector/drop-white.svg" alt="")
+                                    .main-nav__submenu-wrapper
+                                        ul.main-nav__submenu
+                        a.header__lk.header__lk--404(href="") Личный кабинет
+                        .header__burger.header__burger--white#burger
+                            //- img(src="../images/vector/burger.svg" alt="")
+                .header__mobile.header-mobile._container
+                    .header-mobile__menu
+                        a О компании
+                            img(src="images/vector/drop.svg" alt="")
+                        .header-mobile__submenu
+                            a(href="") Подпункт 1
+                            a(href="") Подпункт 2
+                            a(href="") Подпункт 3
+                        a(href="") Потребителям
+                        a(href="") Раскрытие информации
+                        a(href="") Новости
+                        a(href="") Объявления
+                        a(href="") Контакты
+                    a.header-mobile__link(href="").header-mobile__link--phone +7 4752 55-55-68
+                    a.header-mobile__link(href="").header-mobile__link--location г. Тамбов, ул. Московское шоссе, 182
+            .page
+                .notfount
+                    ._container
+                        .notfound__wrapper
+                            img(src="images/404.png", alt="")
+                            .notfound__title Такой страницы не существует
+                            a.button-default.button-default--mode(href="index.html")
+                                <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_245_8681)"><rect x="0.5" width="30" height="30" rx="15" fill="white"/><path fill-rule="evenodd" clip-rule="evenodd" d="M16.9749 7.31819L24.1689 14.2318C24.6104 14.6561 24.6104 15.3439 24.1689 15.7682L16.9749 22.6818C16.5334 23.1061 15.8176 23.1061 15.3762 22.6818C14.9347 22.2576 14.9347 21.5697 15.3762 21.1454L20.6405 16.0864L-0.369566 16.0864C-0.993888 16.0864 -1.5 15.6 -1.5 15C-1.5 14.4 -0.993888 13.9136 -0.369566 13.9136L20.6405 13.9136L15.3762 8.85455C14.9347 8.4303 14.9347 7.74245 15.3762 7.31819C15.8176 6.89394 16.5334 6.89394 16.9749 7.31819Z" fill="#E67523"/></g><defs><clipPath id="clip0_245_8681"><rect x="0.5" width="30" height="30" rx="15" fill="white"/></clipPath></defs></svg>
+                                span На главную
+    include modules/scripts

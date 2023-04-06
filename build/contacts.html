@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__top">
+          <div class="_container"><a class="header__link header__link--location">г. Тамбов, ул. Московское шоссе, 182</a><a class="header__link header__link--phone" href="tel:+74752555568">+7 4752 55-55-68</a></div>
+        </div>
+        <div class="header__bottom">
+          <div class="_container"><a href="index.html"><img class="header__logo" src="images/vector/header-logo.svg" alt=""></a>
+            <div class="top_menu">
+              <ul class="main-nav">
+                <li class="item"><a><span>О компании</span><img src="images/vector/drop.svg" alt=""></a>
+                  <div class="main-nav__submenu-wrapper">
+                    <div class="main-nav__submenu"><a href="">Подменю 1</a><a href="">Подменю 2</a><a href="">Подменю 3</a></div>
+                  </div>
+                </li>
+                <li class="item"><a><span>Потребителям</span><img src="images/vector/drop.svg" alt=""></a>
+                  <div class="main-nav__submenu-wrapper">
+                    <div class="main-nav__submenu"><a href="">Подменю 1</a><a href="">Подменю 2</a><a href="">Подменю 3</a></div>
+                  </div>
+                </li>
+                <li class="item"><a href=""><span>Раскрытие информации</span></a></li>
+                <li class="item"><a href="news.html"><span>Новости</span></a></li>
+                <li class="item"><a href=""><span>Объявления</span></a></li>
+                <li class="item"><a href="contacts.html"><span>Контакты</span></a></li>
+                <li class="dd_menu">
+                  <button class="dropdown-toggle" type="button">Ещё<img src="images/vector/drop.svg" alt=""></button>
+                  <div class="main-nav__submenu-wrapper">
+                    <ul class="main-nav__submenu"></ul>
+                  </div>
+                </li>
+              </ul>
+            </div><a class="header__lk" href="">Личный кабинет</a>
+            <div class="header__burger" id="burger"></div>
+          </div>
+        </div>
+        <div class="header__mobile header-mobile _container">
+          <div class="header-mobile__menu"><a>О компании<img src="images/vector/drop.svg" alt=""></a>
+            <div class="header-mobile__submenu"><a href="">Подпункт 1</a><a href="">Подпункт 2</a><a href="">Подпункт 3</a></div>
+            <div class="header-mobile__submenu"><a href="">Подпункт 1</a><a href="">Подпункт 2</a><a href="">Подпункт 3</a></div><a>Потребителям<img src="images/vector/drop.svg" alt=""></a>
+            <div class="header-mobile__submenu"><a href="">Подменю 1</a><a href="">Подменю 2</a><a href="">Подменю 3</a></div><a href="">Раскрытие информации</a><a href="news.html">Новости</a><a href="">Объявления</a><a href="contacts.html">Контакты</a>
+          </div>
+          <div class="header-mobile__footer"><a class="header-mobile__link header-mobile__link--phone" href="tel:+74752555568">+7 4752 55-55-68</a><a class="header-mobile__link header-mobile__link--location">г. Тамбов, ул. Московское шоссе, 182</a></div>
+        </div>
+      </header>
+      <div class="page">
+        <section class="banner">
+          <div class="_container">
+            <div class="banner__wrapper banner__wrapper--contacts">
+              <div class="breadcrumbs"><a href="index.html">Главная</a><span></span><a class="active">Контакты</a></div>
+              <div class="breadcrumbs__mobile"><a href="">Назад</a></div>
+              <h2 class="banner__title">Контакты</h2>
+            </div>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="_container">
+            <div class="contacts__wrapper">
+              <div class="contacts__col">
+                <ul>
+                  <li><span class="contacts__title">Тип контакта</span><span class="contacts__content">Информация</span></li>
+                  <li><span class="contacts__title">Телефон</span><a class="contacts__content" href="+74752555568">+7 4752 55-55-68 — бухгалтерия</a><a class="contacts__content" href="+747525568">+7 4752 55-55-68 — администрация</a><a class="contacts__content" href="+747525568">+7 4752 55-55-68 — бухгалтерия</a></li>
+                  <li><span class="contacts__title">Адрес</span><span class="contacts__content">Тамбов, 392020, Советская улица, 148/45к1</span></li>
+                  <li><span class="contacts__title">Режим работы</span><span class="contacts__content">ПН-ЧТ: с 08–00 до 17–00</span><span class="contacts__content">ПТ: с 08–00 до 15–45</span><span class="contacts__content">ПЕРЕРЫВ: с 12–00 до 12–45</span></li>
+                </ul>
+              </div>
+              <div class="contacts__col">
+                <div id="map"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="feedback">
+          <div class="_container">
+            <div class="feedback__wrapper feedback__wrapper--contacts">
+              <div>
+                <h2 class="feedback__title">Онлайн-приёмная</h2>
+                <p>Текст о том что можно написать и зачем? ООО «Тамбовская теплоэнергетическая кампания» предоставляет качественные и своевременные услуги по поставке тепла и света и стремится сделать их максимально удобными для потребителя</p>
+              </div>
+              <div class="feedback__content">
+                <input type="text" placeholder="Имя">
+                <input type="text" placeholder="Номер телефона">
+                <textarea placeholder="Введите сообщение"></textarea>
+                <button class="button-default button-default--mode" type="submit"><svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_245_8681)"><rect x="0.5" width="30" height="30" rx="15" fill="white"/><path fill-rule="evenodd" clip-rule="evenodd" d="M16.9749 7.31819L24.1689 14.2318C24.6104 14.6561 24.6104 15.3439 24.1689 15.7682L16.9749 22.6818C16.5334 23.1061 15.8176 23.1061 15.3762 22.6818C14.9347 22.2576 14.9347 21.5697 15.3762 21.1454L20.6405 16.0864L-0.369566 16.0864C-0.993888 16.0864 -1.5 15.6 -1.5 15C-1.5 14.4 -0.993888 13.9136 -0.369566 13.9136L20.6405 13.9136L15.3762 8.85455C14.9347 8.4303 14.9347 7.74245 15.3762 7.31819C15.8176 6.89394 16.5334 6.89394 16.9749 7.31819Z" fill="#E67523"/></g><defs><clipPath id="clip0_245_8681"><rect x="0.5" width="30" height="30" rx="15" fill="white"/></clipPath></defs></svg><span>Отправить</span></button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <footer class="footer">
+        <div class="_container"><a class="footer__logo" href="index.html"><img src="images/vector/footer-logo.svg" alt=""></a>
+          <div class="footer__row">
+            <div class="footer__col"><a href="documenti.html">Учередительные документы</a><a href="ohrana.html">Охрана труда</a><a href="rates.html">Тарифы</a><a href="tehno.html">Техническое присоединение</a><a href="projects.html">Проекты договоров</a></div>
+            <div class="footer__col"><a href="o-kompanii.html">О компании</a><a href="information.html">Раскрытие информации</a><a href="news.html">Новости</a><a href="contacts.html">Контакты</a></div>
+            <div class="footer__contacts"><a class="footer__location">г. Тамбов, ул. Московское шоссе, 182</a><a class="footer__mail" href="mail:mail@example.ru">mail@example.ru</a><a class="footer__phone" href="tel:+74752555568">+7 4752 55-55-68</a></div>
+          </div>
+          <div class="footer__bottom"><a href="">Политика конфиденциальности</a><a href="https://kvokka.com/">kvokka 2022</a></div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;amp;"></script>
+    <script src="js/icon_customImage.js"></script>
+  </body>
+</html>

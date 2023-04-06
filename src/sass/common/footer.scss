@@ -1,0 +1,131 @@
+.footer {
+  position: relative;
+  background-color: var(--blue);
+  padding-top: 80px;
+  padding-bottom: 60px;
+  font-size: 17px;
+  font-weight: 600;
+  overflow: hidden;
+  ._container {
+    display: flex;
+    flex-direction: column;
+  }
+  @media (max-width: 1919px) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  @media (max-width: 1279px) {
+    font-size: 14px;
+    background-size: 514px auto;
+    background-position: right 100px;
+  }
+  @media (max-width: 767px) {
+    background-image: none;
+  }
+  &::before {
+    content:"";
+    position: absolute;
+    top: 0;
+    right: 100px;
+    background-image: url("../images/vector/footer-decor.svg");
+    width: 600px;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    @media (max-width: 1279px) {
+        width: 514px;
+        height: 514px;
+        transform: rotate(90deg);
+        right: 0;
+        top: 100px;
+    }
+  }
+}
+
+.footer__logo {
+  margin-bottom: 60px;
+  width: 234px;
+  @media (max-width: 1919px) {
+    margin-bottom: 40px;
+  }
+  @media (max-width: 767px) {
+    width: 156px;
+    margin-bottom: 20px;
+  }
+}
+
+.footer__row {
+  color: var(--white70);
+  display: flex;
+  gap: 70px;
+  padding: 60px 0;
+  border-top: 1px solid var(--white50);
+  border-bottom: 1px solid var(--white50);
+  @media (max-width: 1919px) {
+    padding: 40px 0;
+  }
+  @media (max-width: 1279px) {
+    padding: 20px 0;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.footer__col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  &:nth-child(2) {
+    @media (max-width: 1279px) {
+      padding-bottom: 20px;
+      border-bottom: 1px solid var(--white50);
+    }
+  }
+}
+
+.footer__bottom {
+  color: var(--white50);
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 1919px) {
+    margin-top: 20px;
+  }
+  @media (max-width: 1279px) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.footer__link {
+  columns: 600px 2;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 20px;
+  a {
+    padding-left: 40px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    &.footer__location {
+      background-image: url("../images/vector/light-vuesax-linear-location.svg");
+    }
+    &.footer__mail {
+      background-image: url("../images/vector/mail.svg");
+    }
+    &.footer__phone {
+      background-image: url("../images/vector/vuesax-linear-call-calling.svg");
+    }
+    @media (max-width: 767px) {
+      padding-left: 30px;
+    }
+  }
+  @media (max-width: 1279px) {
+    margin-left: 0;
+  }
+}

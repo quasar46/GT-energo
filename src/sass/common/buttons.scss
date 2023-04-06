@@ -1,0 +1,109 @@
+.button-default {
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--blue);
+    background-color: #fff;
+    border-radius: 90px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    // background-image: url("../images/vector/button-arrow.svg");
+    // background-size: 30px auto;
+    // background-position: 10px center;
+    // background-repeat: no-repeat;
+    align-self: flex-start;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    svg {
+        rect {
+            fill: var(--orange);
+        }
+        path {
+            fill: white;
+        }
+    }
+    span {
+        padding-left: 10px;
+    }
+    &:hover {
+        background-color: var(--orange);
+        // background-image: url("../images/vector/button-arrow-white.svg");
+        color: #fff;
+        svg {
+            rect {
+                fill: white;
+            }
+            path {
+                fill: var(--orange);
+            }
+        }
+    }
+    &:active {
+        background-color: var(--orangePress);
+    }
+    &--mode {
+        background-color: var(--orange);
+        color: #fff;
+        // background-image: url("../images/vector/button-arrow-white.svg");
+        svg {
+            rect {
+                fill: white;
+            }
+            path {
+                fill: var(--orange);
+            }
+        }
+        &:hover {
+            background-color: #fff;
+            // background-image: url("../images/vector/button-arrow.svg");
+            color: var(--orange);
+            border: 2px solid var(--orange);
+            svg {
+                rect {
+                    fill: var(--orange);;
+                }
+                path {
+                    fill: white;
+                }
+            }
+        }
+    }
+    &--back {
+        background-color: var(--orange);
+        color: #fff;
+        // background-image: url("../images/vector/button-arrow-back.svg");
+        svg {
+            rect {
+                fill: white;
+            }
+            path {
+                fill: var(--orange);
+            }
+        }
+        &:hover {
+            background-color: #fff;
+            // background-image: url("../images/vector/button-arrow.svg");
+            color: var(--orange);
+            border: 2px solid var(--orange);
+            svg {
+                rect {
+                    fill: var(--orange);;
+                }
+                path {
+                    fill: white;
+                }
+            }
+        }
+    }
+    @media (max-width: 767px) {
+        justify-content: center;
+        align-self: stretch;
+        font-size: 14px;
+        height: 40px;
+        letter-spacing: 0.2px;
+    }
+}

@@ -1,0 +1,50 @@
+extends base
+block page
+    section.banner
+        ._container
+            .banner__wrapper.banner__wrapper--contacts
+                .breadcrumbs
+                    a(href="index.html") Главная
+                    span
+                    a.active Контакты
+                .breadcrumbs__mobile
+                    a(href="") Назад
+                h2.banner__title Контакты
+
+    section.contacts
+        ._container
+            .contacts__wrapper
+                .contacts__col
+                    ul
+                        li
+                            span.contacts__title Тип контакта
+                            span.contacts__content Информация
+                        li
+                            span.contacts__title Телефон
+                            a.contacts__content(href="+74752555568") +7 4752 55-55-68 — бухгалтерия
+                            a.contacts__content(href="+747525568") +7 4752 55-55-68 — администрация
+                            a.contacts__content(href="+747525568") +7 4752 55-55-68 — бухгалтерия
+                        li
+                            span.contacts__title Адрес
+                            span.contacts__content Тамбов, 392020, Советская улица, 148/45к1
+                        li
+                            span.contacts__title Режим работы
+                            span.contacts__content ПН-ЧТ: с 08–00 до 17–00
+                            span.contacts__content ПТ: с 08–00 до 15–45
+                            span.contacts__content ПЕРЕРЫВ: с 12–00 до 12–45
+                .contacts__col
+                    #map
+
+    section.feedback
+        ._container
+            .feedback__wrapper.feedback__wrapper--contacts
+                div
+                    h2.feedback__title Онлайн-приёмная
+                    p Текст о том что можно написать и зачем? ООО «Тамбовская теплоэнергетическая кампания» предоставляет качественные и своевременные услуги по поставке тепла и света и стремится сделать их максимально удобными для потребителя
+                .feedback__content
+                    input(type="text" placeholder="Имя")
+                    input(type="text" placeholder="Номер телефона")
+                    textarea(placeholder="Введите сообщение")
+                    button(type="submit").button-default.button-default--mode
+                        <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_245_8681)"><rect x="0.5" width="30" height="30" rx="15" fill="white"/><path fill-rule="evenodd" clip-rule="evenodd" d="M16.9749 7.31819L24.1689 14.2318C24.6104 14.6561 24.6104 15.3439 24.1689 15.7682L16.9749 22.6818C16.5334 23.1061 15.8176 23.1061 15.3762 22.6818C14.9347 22.2576 14.9347 21.5697 15.3762 21.1454L20.6405 16.0864L-0.369566 16.0864C-0.993888 16.0864 -1.5 15.6 -1.5 15C-1.5 14.4 -0.993888 13.9136 -0.369566 13.9136L20.6405 13.9136L15.3762 8.85455C14.9347 8.4303 14.9347 7.74245 15.3762 7.31819C15.8176 6.89394 16.5334 6.89394 16.9749 7.31819Z" fill="#E67523"/></g><defs><clipPath id="clip0_245_8681"><rect x="0.5" width="30" height="30" rx="15" fill="white"/></clipPath></defs></svg>
+                        span Отправить

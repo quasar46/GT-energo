@@ -1,0 +1,72 @@
+.vacancy__wrapper {
+  display: flex;
+  position: relative;
+  gap: 216px;
+  div:first-child {
+    position: absolute;
+    left: 0;
+    top: 0;
+    @media (max-width: 1919px) {
+        gap: 62px;
+    }
+    @media (max-width: 1279px) {
+        display: none;
+    }
+  }
+}
+
+.vacancy__col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 948px;
+  margin: 0 auto;
+  @media (max-width: 1919px) {
+    margin: 0;
+    margin-left: auto;
+    max-width: 896px;
+  }
+  @media (max-width: 1279px) {
+    max-width: 100%;
+  }
+  @media (max-width: 767px) {
+    gap: 10px;
+  }
+}
+
+.vacancy__title {
+  font-size: 25px;
+  font-weight: 700;
+  color: var(--blue);
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
+}
+
+.vacancy__price {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--grey95);
+    @media (max-width: 767px) {
+        font-size: 18px;
+      }
+}
+
+.vacancy__descr {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--grey95);
+    font-family: "Open Sans", "sans-serif";
+    line-height: 1.38;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    ul {
+        line-height: 1.74;
+        list-style-type: disc;
+        margin-left: 20px;
+    }
+    @media (max-width: 767px) {
+        font-size: 16px;
+      }
+}

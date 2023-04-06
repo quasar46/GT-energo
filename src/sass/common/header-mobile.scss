@@ -1,0 +1,76 @@
+.header-mobile {
+  display: none;
+  position: fixed;
+  top: 100px;
+  height: 100%;
+  flex-direction: column;
+  gap: 30px;
+  background-color: #fff;
+  z-index: 10;
+  padding-bottom: 120px;
+  overflow: auto;
+  &.active {
+    display: flex;
+  }
+  // &::before {
+  //   content:"";
+  //   position: absolute;
+  //   top: -100%;
+  //   left: 0;
+  //   height: 100%;
+  //   background-color: #fff;
+  //   width: 100%;
+  //   z-index: 100;
+  // }
+}
+
+.header-mobile__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  // border-bottom: 1px solid rgba(33, 47, 84, 0.3);
+  border-top: 1px solid rgba(33, 47, 84, 0.3);
+  a {
+    color: var(--blue);
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.header-mobile__link {
+  padding-left: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left center;
+  color: var(--blue);
+  font-size: 14px;
+  font-weight: 600;
+  &--location {
+    background-image: url("../images/vector/light-vuesax-linear-location-2.svg");
+  }
+  &--phone {
+    background-image: url("../images/vector/vuesax-linear-call-calling-2.svg");
+  }
+}
+
+.header-mobile__submenu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 30px;
+}
+
+.header-mobile__footer {
+  margin-top: auto;
+  border-top: 1px solid rgba(33, 47, 84, 0.3);
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
